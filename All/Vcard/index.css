@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+}
+
+
+header{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    background-color:#000000;
+    height: 120px;
+}
+
+
+h1{
+    text-align: left ;
+    padding-right: 0px;
+    padding-top: 40px;
+    padding-left: 30px;
+    color:#1779ff;
+    font-family: sans-serif;
+}
+
+
+.neon-titre{
+    display: inline-flex;
+    filter: brightness(200%);
+}
+
+
+.titre{
+    color: #ffffff;
+    background-color:#000000 ;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+.titre::before{
+    content: 'Boumarouane Issam';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+
+
+.gradient{
+    background:linear-gradient(115.38275452097719deg, rgba(6, 227, 250,1) 6.341714756801319%,rgba(229, 151, 64,1) 95.1298433635614%);
+    position : absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    mix-blend-mode: multiply;
+}
+
+
+.fond{
+    background-image: url("mur.jpg");
+}
+
+
+h2{
+    margin: 0;
+    padding-top:67px;
+    padding-left: 40px;
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    text-shadow: 0 0 10px rgba(6, 227, 250,1),
+                 0 0 20px rgba(6, 227, 250,1),
+                 0 0 30px rgba(6, 227, 250,1),
+                 0 0 40px rgba(6, 227, 250,1);
+}
+
+
+p{
+    line-height: 1.8;
+    padding-top: 35px;
+    display: inline-block;
+    text-align: left;
+    width: 60%;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    padding-left: 50px;
+    color:white;
+    text-shadow: 0 0 10px rgba(6, 227, 250,1),
+                 0 0 20px rgba(6, 227, 250,1),
+                 0 0 30px rgba(6, 227, 250,1);
+}
+
+
+.dernierp{
+    padding-bottom: 62px;
+}
+
+
+.photo{
+    float: right;
+    position : absolute;; 
+    top : 220px;
+    right: 40px;
+    border-radius: 60%;
+    transform: rotate(90deg);
+
+}
+
+
+footer{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    font-family: serif;
+    height: 120px;
+}
+
+
+a{
+    position: absolute;
+    bottom: 7px;
+    right:  3px;
+    transform: translate(-30%,-10%);
+    color:rgba(229, 151, 64,1);
+    padding: 30px 60px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+
+a:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+}
+
+
+a span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, rgba(229, 151, 64,1));
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+
+a span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b,rgba(229, 151, 64,1));
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(100%);
+    }
+}
+
+
+a span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #0c002b,rgba(229, 151, 64,1) );
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+
+a span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, rgba(229, 151, 64,1));
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4
+{
+    0%
+    {
+        transform: translateY(100%);
+    }
+    100%
+    {
+        transform: translateY(-100%);
+    }
+}
+
+
+i{
+    color:rgba(229, 151, 64,1);
+    display: flex;
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,31 @@
+<!-- Dans le fichier HTML fourni, faire comme dans l'exercice 1 mais avec 5 images.  
+**Bonus** Ne faire qu'une seule fonction JavaScript pour cet exercice. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5</title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="images/image1.jpg" id="image1" />
+      <img src="images/image2.jpg" id="image2" />
+      <img src="images/image3.jpg" id="image3" />
+      <img src="images/image4.jpg" id="image4" />
+      <img src="images/image5.jpg" id="image5" />
+    </div>
+    <script>
+    let hoverImg = () => {
+        document.querySelector(".conteneur").addEventListener("mouseover", () => {
+            document.getElementById("image1").src = "images/image2.jpg";
+            document.getElementById("image2").src = "images/image4.jpg";
+            document.getElementById("image3").src = "images/image5.jpg";
+            document.getElementById("image4").src = "images/image3.jpg";
+            document.getElementById("image5").src = "images/image1.jpg";
+        });
+    }
+    hoverImg();
+    </script>
+  </body>
+</html>

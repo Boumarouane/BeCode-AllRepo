@@ -1,0 +1,71 @@
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    width: 400px;
+    height: auto;
+}
+.global{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+}
+
+//!----- Header
+#span_txt{
+    display: none;
+    font-size: small;
+}
+#run{
+    display: none;
+}
+#close{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    padding: 2vw;
+    #cancel{
+        display: none;
+    }
+}
+//!----- Body
+h4{
+    color: orange;
+    text-align: center;
+}
+.containeur{
+    height: 550px;
+}
+.bedo{
+    opacity: 50%;
+}
+#end{
+    background-color: hotpink;
+}
+#day{
+    background-color: red;
+}
+#week{
+    background-color: orange;
+}
+#mounth{
+    background-color: green;
+}
+//!----- Footer
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color:white;
+}

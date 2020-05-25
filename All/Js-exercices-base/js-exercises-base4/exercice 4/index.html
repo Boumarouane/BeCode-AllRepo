@@ -1,0 +1,31 @@
+<!-- Dans le fichier HTML fourni, mettre les bordures des inputs en rouge si les mots de passe sont différents. Sinon les mettre en vert.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" value="" id="motdepasse" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
+    <button type="button" name="button" >Vérification</button>
+  </form>
+
+  <script>
+    document.querySelector('button').addEventListener("click", () => {
+      let valueOne = document.getElementById('motdepasse').value;
+      let valueTwo = document.getElementById('confirmation').value;
+        if(valueOne === valueTwo){
+          document.getElementById('confirmation').style.border = "1px solid green";
+          document.getElementById('motdepasse').style.border = "1px solid green";
+        }
+        else{
+          document.getElementById('motdepasse').style.border = "1px solid red";
+          document.getElementById('confirmation').style.border = "1px solid red";        }
+    });
+  </script>
+</body>
+</html>

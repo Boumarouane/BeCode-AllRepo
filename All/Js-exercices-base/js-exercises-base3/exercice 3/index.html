@@ -1,0 +1,20 @@
+<!-- Dans le fichier HTML fourni, afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 3</title>
+</head>
+<body>
+      <form>
+        <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
+      </form>
+      <script>
+        document.getElementById("nom").addEventListener("keydown", () => {
+            let input = document.getElementById("nom").value;
+            alert(input);
+        })
+      </script>
+</body>
+</html>

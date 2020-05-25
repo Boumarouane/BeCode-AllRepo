@@ -1,0 +1,23 @@
+<!-- Dans le fichier HTML fourni, au survol de l'image ajouter une bordure de 3px rouge et la retirer quand la souris ne la survole plus. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+      <img src="images/image1.jpg" id="image1"/>
+
+      <script>
+        let borderHover = () => {
+            document.getElementById("image1").addEventListener("mouseover", () => {
+                document.getElementById("image1").style.border = "3px solid red";
+            });
+            document.getElementById("image1").addEventListener("mouseout", () => {
+                document.getElementById("image1").style.border = "none";
+            });
+        }
+        borderHover();
+      </script>
+</html>

@@ -1,0 +1,11 @@
+body{
+    background-image: url("/home/user/pendu/touches-clavier-jeu-pendu/img_pendu/pendu,-lapin,-silhouettes-189476.jpg");
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}

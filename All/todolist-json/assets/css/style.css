@@ -1,0 +1,110 @@
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  width: 400px;
+  height: auto;
+}
+
+.global {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#span_txt {
+  display: none;
+  font-size: small;
+}
+
+#run {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: blue;
+  color: white;
+  padding: 2vw;
+}
+
+header #cancel {
+  display: none;
+}
+
+h4 {
+  color: orange;
+  text-align: center;
+}
+
+.containeur {
+  height: 550px;
+}
+
+.bedo {
+  opacity: 50%;
+}
+
+#end {
+  background-color: hotpink;
+}
+
+#day {
+  background-color: red;
+}
+
+#week {
+  background-color: orange;
+}
+
+#mounth {
+  background-color: green;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: blue;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

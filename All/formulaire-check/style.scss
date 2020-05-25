@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    // margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+
+a, a:hover{
+    text-decoration: none;
+    }
+
+.separation{
+    height: 3px;
+    width: 10%;
+    border: none;
+    box-shadow: none;
+    background-color: #03178C;
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+
+// Header
+.header{
+    background-color: #010626;
+    height: 70px;
+    line-height: 70px;
+    .logo{
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+    }
+    .menu{
+        float: right;
+        & a{
+            color: white;
+            margin-right: 20px;
+        }
+        & a:hover{
+        color: #1D16F2;
+        text-decoration: none;
+        }
+    }
+}
+// Bannière
+.img-parallax img{
+    width: 100vw;
+    max-width: 100%;
+    height: 95vh;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.inner-banner{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    & h1{
+        color: white;
+        text-shadow: 1px 1px 2px #FFFFFF;
+    }
+}
+// About
+#about{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.skills{
+    margin-left: 25%;}
+
+// Projet
+#projet{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.container-fluid .block{
+    border: 1px solid #03178C;
+    margin: 20px;
+}
+
+// Contact
+
+#contact{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.blockContact{
+    margin: 5%;
+    border: 1px solid #03178C;
+    margin-left: 18%;
+    padding-top: 5%;
+}
+
+.boutton{
+    margin-left: 25%;
+}
+
+// .form-group{
+//     margin-left: 25%;
+// }
+
+.form-control{
+    width: 100%;
+}
+
+// footer
+footer{
+    background-color: #010626;
+    height: 70px;
+    line-height: 70px;
+    .logo{
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+    }
+}
